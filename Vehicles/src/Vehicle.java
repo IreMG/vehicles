@@ -1,6 +1,12 @@
 
 public class Vehicle {
-   private int cilindrada;
+   public Vehicle(int cilindrada, int portes, int velocidad_actual) {
+		this.cilindrada = cilindrada;
+		this.portes = portes;
+		this.velocidad_actual = 0;
+	}
+
+private int cilindrada;
    private int portes;
    private int velocidad_actual;
    private static final int VELOCIDAD_MAXIMA=120;
