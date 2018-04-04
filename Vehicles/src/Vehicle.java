@@ -20,4 +20,12 @@ private int cilindrada;
 	   }
 	   
    }
+   public void desacelerar() {
+	   if(velocidad_actual>0) {
+		   velocidad_actual=velocidad_actual-10;
+	   }
+	   else {
+		   velocidad_actual=0;
+	   }
+   }
 }
