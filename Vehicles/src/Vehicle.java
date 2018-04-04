@@ -4,6 +4,8 @@ public class Vehicle {
 	private int portes;
 	private int velocidad_actual;
 	private static final int VELOCIDAD_MAXIMA=120;
+	private static final int MARCHAS=5;
+	private int marchaActual=0;
    public Vehicle(int cilindrada, int portes, int velocidad_actual) {
 		this.cilindrada = cilindrada;
 		this.portes = portes;
@@ -27,6 +29,18 @@ public class Vehicle {
 	   }
 	   else {
 		   velocidad_actual=0;
+	   }
+   }
+   public void aumentaMarcha() {
+	   if(marchaActual<MARCHAS) {
+		   marchaActual++;
+	   }
+	   
+	   
+   }
+   public void disminuyeMarcha() {
+	   if(marchaActual>0) {
+		   marchaActual--;
 	   }
    }
 }
